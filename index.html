@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Authentication -->
+  <div id="auth-container">
+    <h1>Chat App</h1>
+
+    <div id="auth-form">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Passord">
+    </div>
+
+    <div id="auth-buttons">
+      <button id="loginBtn">Logg inn</button>
+      <button id="signinBtn">Registrer</button>
+    </div>
+  </div>
+
+  <!-- Chat appen -->
+  <div id="chat-container" class="hidden">
+    <div class="chat-header">
+      <h2>Chat Room</h2>
+      <div class="user-info">
+        <span id="currentUser"></span>
+        <button id="logoutBtn">Logg ut</button>
+        <button id="toggleTheme">🌙</button>
+      </div>
+    </div>
+    
+    <div id="messages-container">
+      <!-- Meldinger vil bli lastet inn her -->
+    </div>
+    
+    <div class="chat-input">
+      <input type="text" id="messageInput" placeholder="Skriv en melding...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
